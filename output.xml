@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3 (Python 3.12.3 on win32)" generated="2025-06-14T20:59:06.314938" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot S3A1 Visible Enable Status" source="C:\Users\srushti.lokhande\PycharmProjects\RobotProject\DAY2\robot_s3a1_visible_enable_status.robot">
+<test id="s1-t1" name="VisibleAndEnable" line="19">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-06-14T20:59:06.914406" level="INFO">Opening browser 'chrome' to base url 'https://www.automationexercise.com/login'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-06-14T20:59:06.914406" elapsed="4.021639"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-06-14T20:59:10.936045" elapsed="1.863315"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-06-14T20:59:12.820486" level="INFO">Page title is 'Automation Exercise - Signup / Login'.</msg>
+<arg>Automation Exercise - Signup / Login</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-06-14T20:59:12.800357" elapsed="0.021121"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-06-14T20:59:12.882808" level="INFO">Element '//input[@data-qa='login-email']' is displayed.</msg>
+<arg>${email_xpath}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-06-14T20:59:12.822478" elapsed="0.060330"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${email_xpath}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-06-14T20:59:12.883810" elapsed="0.057999"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-14T20:59:12.943788" level="INFO">Typing text 'testemail123@gmail.com' into text field '//input[@data-qa='login-email']'.</msg>
+<arg>${email_xpath}</arg>
+<arg>testemail123@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-14T20:59:12.943788" elapsed="0.201421"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-06-14T20:59:13.173068" level="INFO">Element '//input[@data-qa='login-password']' is displayed.</msg>
+<arg>${pass_xpath}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-06-14T20:59:13.145209" elapsed="0.027859"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${pass_xpath}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-06-14T20:59:13.294358" elapsed="0.035834"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-14T20:59:13.337390" level="INFO">Typing text 'Test@123' into text field '//input[@data-qa='login-password']'.</msg>
+<arg>${pass_xpath}</arg>
+<arg>Test@123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-14T20:59:13.337390" elapsed="0.112410"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-06-14T20:59:13.558696" level="INFO">Element '//button[@data-qa='login-button']' is displayed.</msg>
+<arg>${login_xpath}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-06-14T20:59:13.497664" elapsed="0.061032"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${login_xpath}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-06-14T20:59:13.559698" elapsed="0.056987"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-14T20:59:13.624203" level="INFO">Clicking button '//button[@data-qa='login-button']'.</msg>
+<arg>${login_xpath}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-14T20:59:13.624203" elapsed="0.904023"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-14T20:59:16.530562" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-14T20:59:14.528226" elapsed="2.002336"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-06-14T20:59:16.531564" elapsed="2.704276"/>
+</kw>
+<status status="PASS" start="2025-06-14T20:59:06.913402" elapsed="12.325674"/>
+</test>
+<status status="PASS" start="2025-06-14T20:59:06.316624" elapsed="12.924873"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Robot S3A1 Visible Enable Status" id="s1" pass="1" fail="0" skip="0">Robot S3A1 Visible Enable Status</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
