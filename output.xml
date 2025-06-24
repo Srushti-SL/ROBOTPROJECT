@@ -1,58 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3 (Python 3.12.3 on win32)" generated="2025-06-16T13:35:55.501643" rpa="false" schemaversion="5">
-<suite id="s1" name="Robot S3A2 Verify Page Title" source="C:\Users\srushti.lokhande\PycharmProjects\RobotProject\DAY2\robot_s3a2_verify_page_title.robot">
-<test id="s1-t1" name="VerifyLoginLoad" line="10">
+<robot generator="Robot 7.3 (Python 3.12.3 on win32)" generated="2025-06-23T18:39:57.260263" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot S9A1 Handle Tabbed Browser Windows" source="C:\Users\srushti.lokhande\PycharmProjects\RobotProject\DAY7\robot_s9a1_handle_tabbed_browser_windows.robot">
+<test id="s1-t1" name="Handle Tabbed Browser Windows" line="21">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-06-16T13:35:55.678862" level="INFO">Opening browser 'chrome' to base url 'https://www.automationexercise.com/login'.</msg>
+<msg time="2025-06-23T18:39:57.544196" level="INFO">Opening browser 'chrome' to base url 'https://demo.automationtesting.in/Windows.html'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-06-16T13:35:55.678862" elapsed="3.255902"/>
+<status status="PASS" start="2025-06-23T18:39:57.543196" elapsed="3.507823"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-06-16T13:35:58.935762" elapsed="0.068677"/>
+<status status="PASS" start="2025-06-23T18:40:01.053010" elapsed="0.091363"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-23T18:40:02.145566" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-23T18:40:01.145370" elapsed="1.000196"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-23T18:40:02.146077" level="INFO">Clicking button 'xpath://button[contains(text(),'click') and @onclick='newwindow()']'.</msg>
+<msg time="2025-06-23T18:40:02.288347" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-23T18:40:02.288347" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=137.0.7151.105)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6887ffe75+79173]
+	GetHandleVerifier [0x0x7ff6887ffed0+79264]
+	(No symbol) [0x0x7ff6885b9c8c]
+	(No symbol) [0x0x7ff688611a84]
+	(No symbol) [0x0x7ff688603464]
+	(No symbol) [0x0x7ff68863896a]
+	(No symbol) [0x0x7ff688602d16]
+	(No symbol) [0x0x7ff688638b80]
+	(No symbol) [0x0x7ff68866100d]
+	(No symbol) [0x0x7ff688638743]
+	(No symbol) [0x0x7ff6886014c1]
+	(No symbol) [0x0x7ff688602253]
+	GetHandleVerifier [0x0x7ff688aca2ad+3004797]
+	GetHandleVerifier [0x0x7ff688ac46fd+2981325]
+	GetHandleVerifier [0x0x7ff688ae3350+3107360]
+	GetHandleVerifier [0x0x7ff68881a9fe+188622]
+	GetHandleVerifier [0x0x7ff68882228f+219487]
+	GetHandleVerifier [0x0x7ff688808dc4+115860]
+	GetHandleVerifier [0x0x7ff688808f79+116297]
+	GetHandleVerifier [0x0x7ff6887ef528+11256]
+	(No symbol) [0x0x7ff95729e8d7]
+	RtlUserThreadStart [0x0x7ff958b1c5dc+44]
+</msg>
+<arg>xpath://button[contains(text(),'click') and @onclick='newwindow()']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2025-06-23T18:40:02.146077" elapsed="0.149359">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=137.0.7151.105)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6887ffe75+79173]
+	GetHandleVerifier [0x0x7ff6887ffed0+79264]
+	(No symbol) [0x0x7ff6885b9c8c]
+	(No symbol) [0x0x7ff688611a84]
+	(No symbol) [0x0x7ff688603464]
+	(No symbol) [0x0x7ff68863896a]
+	(No symbol) [0x0x7ff688602d16]
+	(No symbol) [0x0x7ff688638b80]
+	(No symbol) [0x0x7ff68866100d]
+	(No symbol) [0x0x7ff688638743]
+	(No symbol) [0x0x7ff6886014c1]
+	(No symbol) [0x0x7ff688602253]
+	GetHandleVerifier [0x0x7ff688aca2ad+3004797]
+	GetHandleVerifier [0x0x7ff688ac46fd+2981325]
+	GetHandleVerifier [0x0x7ff688ae3350+3107360]
+	GetHandleVerifier [0x0x7ff68881a9fe+188622]
+	GetHandleVerifier [0x0x7ff68882228f+219487]
+	GetHandleVerifier [0x0x7ff688808dc4+115860]
+	GetHandleVerifier [0x0x7ff688808f79+116297]
+	GetHandleVerifier [0x0x7ff6887ef528+11256]
+	(No symbol) [0x0x7ff95729e8d7]
+	RtlUserThreadStart [0x0x7ff958b1c5dc+44]
+</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-06-23T18:40:02.295436" elapsed="0.000000"/>
+</kw>
+<kw name="Get Window Handles" owner="SeleniumLibrary">
+<var>${handles}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<status status="NOT RUN" start="2025-06-23T18:40:02.295436" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${original_window}</var>
+<arg>${handles}[0]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-06-23T18:40:02.295436" elapsed="0.000000"/>
+</kw>
+<kw name="Get Window Handles" owner="SeleniumLibrary">
+<var>${windows}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<status status="NOT RUN" start="2025-06-23T18:40:02.295436" elapsed="0.001409"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${handle}' != '${original_window}'</arg>
+<arg>Switch Window</arg>
+<arg>${handle}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" start="2025-06-23T18:40:02.296845" elapsed="0.000000"/>
+</kw>
+<var name="${handle}"/>
+<status status="NOT RUN" start="2025-06-23T18:40:02.296845" elapsed="0.000000"/>
+</iter>
+<var>${handle}</var>
+<value>@{windows}</value>
+<status status="NOT RUN" start="2025-06-23T18:40:02.296845" elapsed="0.000000"/>
+</for>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<arg>Selenium</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="NOT RUN" start="2025-06-23T18:40:02.296845" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>✅ New window title contains "Selenium"</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-06-23T18:40:02.296845" elapsed="0.000000"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>${original_window}</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="NOT RUN" start="2025-06-23T18:40:02.298207" elapsed="0.000000"/>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2025-06-16T13:35:59.024553" level="INFO">Page title is 'Automation Exercise - Signup / Login'.</msg>
-<arg>Automation Exercise - Signup / Login</arg>
+<arg>Windows</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2025-06-16T13:35:59.005558" elapsed="0.020002"/>
+<status status="NOT RUN" start="2025-06-23T18:40:02.298207" elapsed="0.000000"/>
 </kw>
-<kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2025-06-16T13:35:59.051125" level="INFO">Current page contains element 'xpath://input[@data-qa='login-email']'.</msg>
-<arg>xpath://input[@data-qa='login-email']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2025-06-16T13:35:59.026557" elapsed="0.024568"/>
+<kw name="Log" owner="BuiltIn">
+<arg>✅ Original window title contains "Windows"</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-06-23T18:40:02.298207" elapsed="0.000000"/>
 </kw>
-<kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2025-06-16T13:35:59.064477" level="INFO">Current page contains element 'xpath://input[@data-qa='login-password']'.</msg>
-<arg>xpath://input[@data-qa='login-password']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2025-06-16T13:35:59.051125" elapsed="0.013352"/>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="NOT RUN" start="2025-06-23T18:40:02.298207" elapsed="0.000000"/>
 </kw>
-<kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2025-06-16T13:35:59.074207" level="INFO">Current page contains element 'xpath://button[@data-qa='login-button']'.</msg>
-<arg>xpath://button[@data-qa='login-button']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2025-06-16T13:35:59.065482" elapsed="0.008725"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-06-16T13:35:59.074207" elapsed="2.214739"/>
-</kw>
-<status status="PASS" start="2025-06-16T13:35:55.677982" elapsed="5.611967"/>
+<status status="FAIL" start="2025-06-23T18:39:57.543196" elapsed="4.755011">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=137.0.7151.105)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6887ffe75+79173]
+	GetHandleVerifier [0x0x7ff6887ffed0+79264]
+	(No symbol) [0x0x7ff6885b9c8c]
+	(No symbol) [0x0x7ff688611a84]
+	(No symbol) [0x0x7ff688603464]
+	(No symbol) [0x0x7ff68863896a]
+	(No symbol) [0x0x7ff688602d16]
+	(No symbol) [0x0x7ff688638b80]
+	(No symbol) [0x0x7ff68866100d]
+	(No symbol) [0x0x7ff688638743]
+	(No symbol) [0x0x7ff6886014c1]
+	(No symbol) [0x0x7ff688602253]
+	GetHandleVerifier [0x0x7ff688aca2ad+3004797]
+	GetHandleVerifier [0x0x7ff688ac46fd+2981325]
+	GetHandleVerifier [0x0x7ff688ae3350+3107360]
+	GetHandleVerifier [0x0x7ff68881a9fe+188622]
+	GetHandleVerifier [0x0x7ff68882228f+219487]
+	GetHandleVerifier [0x0x7ff688808dc4+115860]
+	GetHandleVerifier [0x0x7ff688808f79+116297]
+	GetHandleVerifier [0x0x7ff6887ef528+11256]
+	(No symbol) [0x0x7ff95729e8d7]
+	RtlUserThreadStart [0x0x7ff958b1c5dc+44]
+</status>
 </test>
-<status status="PASS" start="2025-06-16T13:35:55.502642" elapsed="5.790322"/>
+<status status="FAIL" start="2025-06-23T18:39:57.261265" elapsed="5.039424"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Robot S3A2 Verify Page Title" id="s1" pass="1" fail="0" skip="0">Robot S3A2 Verify Page Title</stat>
+<stat name="Robot S9A1 Handle Tabbed Browser Windows" id="s1" pass="0" fail="1" skip="0">Robot S9A1 Handle Tabbed Browser Windows</stat>
 </suite>
 </statistics>
 <errors>
