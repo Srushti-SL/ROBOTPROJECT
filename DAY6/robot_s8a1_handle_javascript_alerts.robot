@@ -47,6 +47,5 @@ Handle Alert With OK And Cancel
     Alert Should Be Present
     Handle Alert                        dismiss
     Sleep                               1s
-    # This page doesn’t show a message, so you could log a confirmation
     Log                                 Confirm alert dismissed successfully
     Close Browser
